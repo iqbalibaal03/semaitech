@@ -102,7 +102,7 @@
 								<i class="zmdi zmdi-account"></i>
 								<?php if ($this->session->userdata('nama')) : ?>
 								<ul class="sub-menu">
-									<li><a href="#"><i class="zmdi zmdi-account"></i>&ensp;Profile</a></li>
+									<li><a href="<?= base_url('home/profil') ?>"><i class="zmdi zmdi-account"></i>&ensp;Profile</a></li>
 									<li><a href="<?= base_url('home/cart')?>"><i class="zmdi zmdi-shopping-cart"></i>&ensp;Keranjang Saya</a></li>
 									<li><a href="<?= base_url('auth/logout')?>"><i class="fa-solid fa-arrow-right-from-bracket"></i>&ensp;Log out</a></li>
 								</ul>
@@ -139,7 +139,7 @@
 						<i class="zmdi zmdi-account"></i>
 						<?php if ($this->session->userdata('nama')) : ?>
 						<ul class="sub-menu">
-							<li><a href="#">Profile</a></li>
+							<li><a href="<?= base_url('home/profil') ?>">Profile</a></li>
 							<li><a href="<?= base_url('home/cart')?>">&ensp;Cart</a></li>
 							<li><a href="<?= base_url('auth/logout')?>">&ensp;Log out</a></li>
 						</ul>
